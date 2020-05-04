@@ -61,7 +61,7 @@ Program sha
     close(2)
 
     ! Calculation of the spin Hall angle (SHA)
-    ! Spin Hall angle equation is taken from Nature Materials volume 19, pages 292–298(2020) under the methods section
+    ! Spin Hall angle equation is taken from PRB 98, 214402 (2018) under the methods section
     open(3, file = trim(seedname)//'-sha-fermiscan.dat', status = 'replace')
     write (3,103) 'Fermi energy(eV)', 'Temp(K)', 'SHA'
 
